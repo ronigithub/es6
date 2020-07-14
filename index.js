@@ -1,3 +1,11 @@
+// ==============
+// Modules
+// ==============
+import { Student } from "./student";
+
+const student = new Student("Roni", "20th");
+student.learn();
+
 // =========
 // Classes
 // =========
