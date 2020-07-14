@@ -1,8 +1,16 @@
+
+import { Student } from "./student";
+
+// Default -> import ... from '';
+// Named -> import { ... } from '';
+import Teacher, { promote } from "./teacher";
+
+const teacher = new Teacher("Roni", "20th");
+teacher.learn();
+
 // ==============
 // Modules
 // ==============
-import { Student } from "./student";
-
 const student = new Student("Roni", "20th");
 student.learn();
 
