@@ -71,3 +71,24 @@ const colors = ["red", "green", "blue"];
 const items = colors.map((color) => `<li>${color}</li>`);
 
 console.log(items);
+
+// ======================
+// Object Destructuring
+// ======================
+
+const address = {
+  street: "",
+  city: "",
+  country: "",
+};
+
+// const street = address.street;
+// const city = address.city;
+// const country = address.country;
+
+// SAME AS
+
+const { street, city, country } = address;
+
+// For alias
+const { street: st } = address;
