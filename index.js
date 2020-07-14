@@ -92,3 +92,27 @@ const { street, city, country } = address;
 
 // For alias
 const { street: st } = address;
+
+
+// ===================
+// Spread Operator
+// ===================
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+
+const combined = first.concat(second);
+const combinedWithSpread = [...first, "a", ...second, "b"];
+
+console.log(combinedWithSpread);
+
+// object
+const bio = {
+  name: "Roni",
+};
+
+const job = {
+  designation: "Lead Software Engineer",
+};
+
+const objectSpread = { ...bio, ...job, company: "accfintech" };
+
