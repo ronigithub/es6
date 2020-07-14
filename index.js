@@ -1,3 +1,36 @@
+// =========
+// Classes
+// =========
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  walk() {
+    console.log("walk");
+  }
+}
+
+const personObj = new Person("Roni");
+personObj.walk();
+
+// ==============
+// Inheritance
+// ==============
+class Teacher extends Person {
+  constructor(name, degree) {
+    super(name);
+    this.degree = degree;
+  }
+
+  teach() {
+    console.log("Teach");
+  }
+}
+const teacher = new Teacher("Roni", "BSC");
+teacher.teach();
+
 
 // ====================
 // Let vs Var vs Const
